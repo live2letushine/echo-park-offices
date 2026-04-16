@@ -1,1 +1,287 @@
-PLACEHOLDER_HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Offices in Echo Park — Limited Availability</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #FFFFFF;
+            color: #1A1A1A;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        header {
+            padding: 32px 0 80px;
+            border-bottom: 1px solid #E5E5E5;
+        }
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+        }
+        .hero {
+            padding: 80px 0 120px;
+            text-align: center;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(48px, 8vw, 96px);
+            line-height: 1.1;
+            font-weight: 400;
+            margin-bottom: 32px;
+            letter-spacing: -0.02em;
+        }
+        .hero-subtitle {
+            font-size: 20px;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto 48px;
+        }
+        .badge {
+            display: inline-block;
+            background: #F5F5F5;
+            padding: 8px 16px;
+            border-radius: 24px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 24px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 16px;
+            margin-bottom: 120px;
+        }
+        .gallery img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .details-section {
+            background: #FAFAFA;
+            padding: 80px 0;
+            margin-bottom: 80px;
+        }
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 48px;
+            margin-top: 64px;
+        }
+        .detail-block h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            margin-bottom: 16px;
+            font-weight: 400;
+        }
+        .detail-block p, .detail-block ul {
+            font-size: 16px;
+            color: #666;
+        }
+        .detail-block ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .detail-block ul li {
+            padding: 8px 0;
+        }
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+            margin-top: 32px;
+        }
+        .price-card {
+            background: #FFF;
+            padding: 24px;
+            border-radius: 8px;
+            border: 1px solid #E5E5E5;
+        }
+        .price-card h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .price-card .price {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            color: #1A1A1A;
+            margin-bottom: 4px;
+        }
+        .price-card .status {
+            font-size: 13px;
+            color: #999;
+        }
+        .status.available {
+            color: #059669;
+            font-weight: 500;
+        }
+        .status.rented {
+            color: #DC2626;
+        }
+        .intake-section {
+            padding: 80px 0 120px;
+            text-align: center;
+        }
+        .intake-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(32px, 5vw, 56px);
+            margin-bottom: 24px;
+            font-weight: 400;
+        }
+        .intake-section p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 48px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .asana-embed-container {
+            margin: 0 auto;
+        }
+        footer {
+            border-top: 1px solid #E5E5E5;
+            padding: 48px 0;
+            text-align: center;
+            color: #999;
+            font-size: 14px;
+        }
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+            .details-grid, .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Private Offices</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="badge">Only 3 offices remaining</div>
+            <h1>Your next creative<br>HQ in Echo Park.</h1>
+            <p class="hero-subtitle">Private offices in a creative coworking space designed for the LA independent. Available now at 160 Glendale Blvd.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="gallery">
+            <img src="images/Office-Space-Tour-Images.jpg" alt="Office tour">
+            <img src="images/avilable-offices.jpg" alt="Available offices">
+            <img src="images/Imagery-of-Coworking-Space-with-Plants-Neon-Sign-Orange-Couch-and-Exposed-Brick.jpg" alt="Creative workspace">
+        </div>
+    </div>
+
+    <section class="details-section">
+        <div class="container">
+            <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(32px, 5vw, 48px); text-align: center; margin-bottom: 16px; font-weight: 400;">What's Included</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 64px;">Everything you need to do your best work</p>
+            
+            <div class="details-grid">
+                <div class="detail-block">
+                    <h3>24/7 Access</h3>
+                    <p>Work on your schedule. Building access anytime, day or night.</p>
+                </div>
+                <div class="detail-block">
+                    <h3>Parking Included</h3>
+                    <p>Free street parking and private lot access (open until 10:30pm nightly).</p>
+                </div>
+                <div class="detail-block">
+                    <h3>Shared Amenities</h3>
+                    <ul>
+                        <li>• Gym & fitness area</li>
+                        <li>• Outdoor terrace</li>
+                        <li>• Coffee bar</li>
+                        <li>• Meeting rooms</li>
+                        <li>• Phone booths</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="margin-top: 80px;">
+                <h3 style="font-family: 'Playfair Display', serif; font-size: 32px; text-align: center; margin-bottom: 32px; font-weight: 400;">Pricing & Availability</h3>
+                <div class="pricing-grid">
+                    <div class="price-card">
+                        <h4>Office A</h4>
+                        <div class="price">$2,400/mo</div>
+                        <div class="status rented">Rented</div>
+                    </div>
+                    <div class="price-card">
+                        <h4>Office B</h4>
+                        <div class="price">$2,400/mo</div>
+                        <div class="status available">Available</div>
+                    </div>
+                    <div class="price-card">
+                        <h4>Office C</h4>
+                        <div class="price">$2,400/mo</div>
+                        <div class="status rented">Rented</div>
+                    </div>
+                    <div class="price-card">
+                        <h4>Office D</h4>
+                        <div class="price">$3,000/mo</div>
+                        <div class="status available">Available</div>
+                    </div>
+                    <div class="price-card">
+                        <h4>Office E</h4>
+                        <div class="price">$3,000/mo</div>
+                        <div class="status rented">Rented</div>
+                    </div>
+                    <div class="price-card">
+                        <h4>Office F</h4>
+                        <div class="price">$2,000/mo</div>
+                        <div class="status available">Available (12-mo lease)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="intake-section">
+        <div class="container">
+            <h2>Secure your space.</h2>
+            <p>Offices are moving fast. Fill out the form below to learn more and schedule a tour.</p>
+            
+            <div class="asana-embed-container">
+                <link rel="stylesheet" href="https://form.asana.com/static/asana-form-embed-style.css"/>
+                <iframe class="asana-embed-iframe" height="533" width="800" src="https://form.asana.com/?k=SY1-TO8E8frI_LJFMpqlyg&d=476808446035410&embed=true"></iframe>
+                <div class="asana-embed-footer">
+                    <a rel="nofollow noopener" target="_blank" class="asana-embed-footer-link" href="https://asana.com/?utm_source=embedded_form">
+                        <span class="asana-embed-footer-text">Form powered by</span>
+                        <div class="asana-embed-footer-logo" role="img" aria-label="Logo of Asana"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>160 Glendale Blvd, Echo Park, Los Angeles, CA</p>
+        </div>
+    </footer>
+</body>
+</html>
